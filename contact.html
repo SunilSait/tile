@@ -15,13 +15,12 @@
     <div id="navbar-container"></div>
 
     <!-- ===== HERO ===== -->
-    <section class="relative py-28 overflow-hidden" style="background-image: linear-gradient(rgba(28,28,46,0.75), rgba(28,28,46,0.75)), url('assets/banner_contact.png'); background-size: cover; background-position: center;">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 text-center relative z-10">
-            <div class="section-tag mx-auto" style="background:rgba(43,107,90,0.15);border-color:rgba(43,107,90,0.3);">
-                <i class="fas fa-envelope text-[10px]"></i> Contact
-            </div>
-            <h1 class="text-white mb-4" style="font-family:'Playfair Display',serif;">Get In <span class="emerald-text">Touch</span></h1>
-            <p class="text-neutral-300 text-lg max-w-2xl mx-auto">Have a question about our collections, need samples, or want to discuss your project? We'd love to hear from you.</p>
+    <section class="relative h-[60vh] min-h-[400px] flex items-center justify-center overflow-hidden">
+        <img src="assets/banner_contact.png" alt="Tessera Contact" class="absolute inset-0 w-full h-full object-cover">
+        <div class="absolute inset-0 bg-black/55"></div>
+        <div class="relative z-10 text-center px-4">
+            <p class="text-[#5AA88E] text-xs font-bold uppercase tracking-[0.35em] mb-4">Contact</p>
+            <h1 class="text-white" style="font-family:'Playfair Display',serif;font-size:clamp(2.5rem,6vw,4.5rem);font-weight:700;">Get In Touch</h1>
         </div>
     </section>
 
@@ -59,15 +58,20 @@
                             <i class="fas fa-paper-plane text-xs"></i> Send Message
                         </button>
                     </form>
+
+                    <!-- Decorative Showroom Image -->
+                    <div class="mt-12 rounded-2xl overflow-hidden shadow-sm border border-[#DDD8D0] dark:border-[#2D2D4A] h-64 lg:h-72 reveal">
+                        <img src="assets/project_living.png" alt="Tessera Showroom Interior" class="w-full h-full object-cover">
+                    </div>
                 </div>
 
                 <!-- Contact Info -->
-                <div class="flex flex-col gap-6 reveal">
+                <div class="flex flex-col gap-6 reveal text-center lg:text-left">
                     <h2 class="section-title mb-2">Contact <span class="emerald-text">Information</span></h2>
                     <p class="section-subtitle mb-4">Prefer to reach us directly? Here's how you can connect with our team.</p>
 
                     <!-- Info Cards -->
-                    <div class="card p-6 flex items-start gap-4">
+                    <div class="card p-6 flex flex-col lg:flex-row items-center lg:items-start text-center lg:text-left gap-4">
                         <div class="w-12 h-12 rounded-xl bg-[#2B6B5A]/10 flex items-center justify-center shrink-0">
                             <i class="fas fa-location-dot text-[#2B6B5A]"></i>
                         </div>
@@ -76,7 +80,7 @@
                             <p class="text-sm text-neutral-500 dark:text-neutral-400">28 Stone Mill Road, Design District<br>New York, NY 10013</p>
                         </div>
                     </div>
-                    <div class="card p-6 flex items-start gap-4">
+                    <div class="card p-6 flex flex-col lg:flex-row items-center lg:items-start text-center lg:text-left gap-4">
                         <div class="w-12 h-12 rounded-xl bg-[#2B6B5A]/10 flex items-center justify-center shrink-0">
                             <i class="fas fa-phone text-[#2B6B5A]"></i>
                         </div>
@@ -85,7 +89,7 @@
                             <p class="text-sm text-neutral-500 dark:text-neutral-400">+1 (555) 847-2930<br>Mon–Fri: 9:00 AM – 6:00 PM EST</p>
                         </div>
                     </div>
-                    <div class="card p-6 flex items-start gap-4">
+                    <div class="card p-6 flex flex-col lg:flex-row items-center lg:items-start text-center lg:text-left gap-4">
                         <div class="w-12 h-12 rounded-xl bg-[#2B6B5A]/10 flex items-center justify-center shrink-0">
                             <i class="fas fa-envelope text-[#2B6B5A]"></i>
                         </div>
@@ -94,18 +98,18 @@
                             <p class="text-sm text-neutral-500 dark:text-neutral-400">hello@tesseratiles.co<br>samples@tesseratiles.co</p>
                         </div>
                     </div>
-                    <div class="card p-6 flex items-start gap-4">
+                    <div class="card p-6 flex flex-col lg:flex-row items-center lg:items-start text-center lg:text-left gap-4">
                         <div class="w-12 h-12 rounded-xl bg-[#2B6B5A]/10 flex items-center justify-center shrink-0">
                             <i class="fas fa-clock text-[#2B6B5A]"></i>
                         </div>
                         <div>
                             <h4 class="text-sm font-bold text-[#1C1C2E] dark:text-white mb-1">Business Hours</h4>
-                            <p class="text-sm text-neutral-500 dark:text-neutral-400">Monday – Friday: 9:00 AM – 6:00 PM<br>Saturday: 10:00 AM – 4:00 PM<br>Sunday: Closed</p>
+                            <p class="text-sm text-neutral-500 dark:text-neutral-400">Mon – Fri: 9:00 AM – 6:00 PM<br>Sat: 10:00 AM – 4:00 PM<br>Sun: Closed</p>
                         </div>
                     </div>
 
                     <!-- Social Links -->
-                    <div class="flex items-center gap-3 mt-2">
+                    <div class="flex items-center justify-center lg:justify-start gap-3 mt-2">
                         <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full border border-[#DDD8D0] dark:border-[#2D2D4A] text-neutral-500 hover:text-[#2B6B5A] hover:border-[#2B6B5A] transition-all">
                             <i class="fab fa-instagram text-sm"></i>
                         </a>
@@ -124,15 +128,18 @@
         </div>
     </section>
 
-    <!-- ===== MAP PLACEHOLDER ===== -->
-    <section class="bg-white dark:bg-[#141420] border-t border-[#DDD8D0] dark:border-[#2D2D4A]">
-        <div class="w-full h-72 bg-[#E8E2D8] dark:bg-[#1C1C2E] flex items-center justify-center">
-            <div class="text-center">
-                <div class="w-16 h-16 rounded-full bg-[#2B6B5A]/10 flex items-center justify-center mx-auto mb-4">
-                    <i class="fas fa-map-location-dot text-[#2B6B5A] text-2xl"></i>
-                </div>
-                <p class="text-sm font-semibold text-neutral-500 dark:text-neutral-400">28 Stone Mill Road, Design District</p>
-                <p class="text-xs text-neutral-400 dark:text-neutral-500 mt-1">New York, NY 10013</p>
+    <!-- ===== LIVE MAP ===== -->
+    <section class="pb-24 bg-[#F8F6F2] dark:bg-[#0D0D1A]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+            <div class="rounded-3xl overflow-hidden shadow-sm border border-[#DDD8D0] dark:border-[#2D2D4A] reveal">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.5152865955613!2d-74.0041415!3d40.7286915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2598f86f8742b%3A0xc002167ed9bdfc25!2sSoHo%2C%20New%20York%2C%20NY!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus" 
+                    class="w-full h-[350px] lg:h-[450px]" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
             </div>
         </div>
     </section>

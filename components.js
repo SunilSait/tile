@@ -16,6 +16,7 @@
     const NAV_LINKS = [
         { label: 'Home', href: 'index.html' },
         { label: 'Home 2', href: 'home2.html' },
+        { label: 'Collections', href: 'collections.html' },
         { label: 'Services', href: 'services.html' },
         { label: 'About', href: 'about.html' },
         { label: 'Pricing', href: 'pricing.html' },
@@ -122,13 +123,11 @@
                     </div>
                     <div class="flex flex-col sm:flex-row items-center gap-3 px-5 pt-4 border-t border-neutral-100 dark:border-[#2D2D4A]">
                         <div class="flex gap-2 w-full sm:w-auto">
-                            <button class="js-dir-toggle flex items-center gap-2 px-4 py-2.5 rounded-xl bg-white dark:bg-[#1C1C2E] border border-[#DDD8D0] dark:border-[#2D2D4A] text-neutral-600 dark:text-neutral-400 flex-1 sm:flex-none justify-center text-sm">
+                            <button class="js-dir-toggle flex w-10 h-10 items-center justify-center rounded-xl bg-white dark:bg-[#1C1C2E] border border-[#DDD8D0] dark:border-[#2D2D4A] text-neutral-500 dark:text-neutral-400 hover:border-[#2B6B5A] hover:text-[#2B6B5A] transition-all shadow-sm">
                                 <i class="fas fa-exchange-alt text-sm"></i>
-                                <span class="text-xs font-bold uppercase tracking-wider">LTR / RTL</span>
                             </button>
-                            <button class="js-theme-toggle flex items-center gap-2 px-4 py-2.5 rounded-xl bg-white dark:bg-[#1C1C2E] border border-[#DDD8D0] dark:border-[#2D2D4A] text-neutral-600 dark:text-neutral-400 flex-1 sm:flex-none justify-center text-sm">
+                            <button class="js-theme-toggle flex w-10 h-10 items-center justify-center rounded-xl bg-white dark:bg-[#1C1C2E] border border-[#DDD8D0] dark:border-[#2D2D4A] text-neutral-500 dark:text-neutral-400 hover:border-[#2B6B5A] hover:text-[#2B6B5A] transition-all shadow-sm">
                                 <i class="fas fa-moon text-sm"></i>
-                                <span class="text-xs font-bold uppercase tracking-wider">Theme</span>
                             </button>
                         </div>
                         <div class="flex gap-2 w-full sm:w-auto">
@@ -171,6 +170,7 @@
                         <ul class="space-y-2.5">
                             <li><a href="index.html" class="footer-link">Home</a></li>
                             <li><a href="home2.html" class="footer-link">Home 2 — Premium</a></li>
+                            <li><a href="collections.html" class="footer-link">Collections</a></li>
                             <li><a href="services.html" class="footer-link">Services</a></li>
                             <li><a href="about.html" class="footer-link">About</a></li>
                             <li><a href="pricing.html" class="footer-link">Pricing</a></li>

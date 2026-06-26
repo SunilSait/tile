@@ -618,6 +618,7 @@ textarea.form-input { resize: vertical; min-height: 120px; }
     height: 100%;
     transition: var(--transition);
     position: relative;
+    overflow: hidden;
 }
 
 .pricing-card:hover {

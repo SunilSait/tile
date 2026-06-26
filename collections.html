@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tessera Collections — Explore our premium imported tiles from around the world.">
+    <title>Collections | Tessera — Specialty Tile & Mosaic Importer</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' fill='none'%3E%3Crect x='4' y='4' width='92' height='92' rx='8' stroke='%232B6B5A' stroke-width='2' stroke-opacity='0.4' fill='none'/%3E%3Crect x='20' y='20' width='25' height='25' rx='3' fill='%232B6B5A' fill-opacity='0.25' stroke='%232B6B5A' stroke-width='1.5'/%3E%3Crect x='55' y='55' width='25' height='25' rx='3' fill='%232B6B5A' fill-opacity='0.25' stroke='%232B6B5A' stroke-width='1.5'/%3E%3C/svg%3E">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script>tailwind.config = { darkMode: 'class', theme: { extend: { colors: { primary: '#2B6B5A', secondary: '#1C1C2E' } } } }</script>
+</head>
+<body>
+    <div id="navbar-container"></div>
+
+    <!-- ===== HERO ===== -->
+    <section class="relative h-[60vh] min-h-[400px] flex items-center justify-center overflow-hidden">
+        <img src="assets/project_bathroom.png" alt="Bathroom Tile Project" class="absolute inset-0 w-full h-full object-cover">
+        <div class="absolute inset-0 bg-black/60"></div>
+        <div class="relative z-10 text-center px-4">
+            <p class="text-[#5AA88E] text-xs font-bold uppercase tracking-[0.35em] mb-4">Product Catalog</p>
+            <h1 class="text-white" style="font-family:'Playfair Display',serif;font-size:clamp(2.5rem,6vw,4.5rem);font-weight:700;">Our Collections</h1>
+        </div>
+    </section>
+
+    <!-- ===== COLLECTIONS BY ORIGIN ===== -->
+    <section class="py-28 bg-[#F8F6F2] dark:bg-[#0D0D1A]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+            <div class="text-center mb-16 reveal">
+                <p class="text-[#2B6B5A] text-xs font-bold uppercase tracking-[0.3em] mb-3">Origins & Patterns</p>
+                <h2 class="leading-tight" style="font-family:'Playfair Display',serif;font-size:clamp(2rem,4vw,3rem);font-weight:700;">Curated From The Source</h2>
+            </div>
+
+            <div class="space-y-16 lg:space-y-24 reveal">
+                <!-- Italian Marble -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <div class="rounded-3xl overflow-hidden shadow-sm h-[400px] lg:h-[500px]">
+                        <img src="assets/tile_italian_marble.png" alt="Italian Marble Tile" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700">
+                    </div>
+                    <div class="lg:px-8">
+                        <div class="text-[#2B6B5A]/30 dark:text-[#5AA88E]/40 text-6xl font-bold mb-4" style="font-family:'Playfair Display',serif;">01</div>
+                        <h3 class="text-3xl font-bold mb-4" style="font-family:'Playfair Display',serif;">Italian Marble</h3>
+                        <p class="text-neutral-500 dark:text-neutral-400 mb-6 leading-relaxed">Sourced directly from the historic quarries of Carrara, our Italian marble collection offers timeless elegance. Featuring distinctive veining and a luminous finish, these tiles are perfect for creating luxurious floors, walls, and architectural features.</p>
+                        <ul class="space-y-3 mb-8 text-sm text-neutral-600 dark:text-neutral-400">
+                            <li class="flex items-center gap-3"><div class="w-1.5 h-1.5 rounded-full bg-[#2B6B5A] shrink-0"></div> Polished and honed finishes available</li>
+                            <li class="flex items-center gap-3"><div class="w-1.5 h-1.5 rounded-full bg-[#2B6B5A] shrink-0"></div> Suitable for high-moisture environments</li>
+                            <li class="flex items-center gap-3"><div class="w-1.5 h-1.5 rounded-full bg-[#2B6B5A] shrink-0"></div> Cut to custom specifications</li>
+                        </ul>
+                        <a href="pricing.html" class="btn btn-primary btn-shine inline-block">Order Sample <i class="fas fa-arrow-right ml-2 text-xs"></i></a>
+                    </div>
+                </div>
+
+                <!-- Moroccan Zellige -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <div class="rounded-3xl overflow-hidden shadow-sm h-[400px] lg:h-[500px] lg:order-2">
+                        <img src="assets/tile_moroccan_zellige.png" alt="Moroccan Zellige Tile" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700">
+                    </div>
+                    <div class="lg:px-8 lg:order-1">
+                        <div class="text-[#2B6B5A]/30 dark:text-[#5AA88E]/40 text-6xl font-bold mb-4" style="font-family:'Playfair Display',serif;">02</div>
+                        <h3 class="text-3xl font-bold mb-4" style="font-family:'Playfair Display',serif;">Moroccan Zellige</h3>
+                        <p class="text-neutral-500 dark:text-neutral-400 mb-6 leading-relaxed">Handcrafted by master artisans in Fez, our Zellige collection brings rich texture and vibrant, shifting colors to any space. Each tile is unique, reflecting centuries of traditional Islamic geometry and glazing techniques.</p>
+                        <ul class="space-y-3 mb-8 text-sm text-neutral-600 dark:text-neutral-400">
+                            <li class="flex items-center gap-3"><div class="w-1.5 h-1.5 rounded-full bg-[#2B6B5A] shrink-0"></div> 100% handmade and authentic</li>
+                            <li class="flex items-center gap-3"><div class="w-1.5 h-1.5 rounded-full bg-[#2B6B5A] shrink-0"></div> Rich, dimensional glazes</li>
+                            <li class="flex items-center gap-3"><div class="w-1.5 h-1.5 rounded-full bg-[#2B6B5A] shrink-0"></div> Perfect for backsplashes and feature walls</li>
+                        </ul>
+                        <a href="pricing.html" class="btn btn-primary btn-shine inline-block">Order Sample <i class="fas fa-arrow-right ml-2 text-xs"></i></a>
+                    </div>
+                </div>
+
+                <!-- Portuguese Azulejo -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <div class="rounded-3xl overflow-hidden shadow-sm h-[400px] lg:h-[500px]">
+                        <img src="assets/tile_portuguese_azulejo.png" alt="Portuguese Azulejo Tile" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700">
+                    </div>
+                    <div class="lg:px-8">
+                        <div class="text-[#2B6B5A]/30 dark:text-[#5AA88E]/40 text-6xl font-bold mb-4" style="font-family:'Playfair Display',serif;">03</div>
+                        <h3 class="text-3xl font-bold mb-4" style="font-family:'Playfair Display',serif;">Portuguese Azulejo</h3>
+                        <p class="text-neutral-500 dark:text-neutral-400 mb-6 leading-relaxed">Celebrate the vibrant history of Portugal with our hand-painted Azulejo collections. From intricate cobalt blue patterns to bold modern reinterpretations, these tiles are a testament to enduring European artistry.</p>
+                        <ul class="space-y-3 mb-8 text-sm text-neutral-600 dark:text-neutral-400">
+                            <li class="flex items-center gap-3"><div class="w-1.5 h-1.5 rounded-full bg-[#2B6B5A] shrink-0"></div> Intricate, hand-painted designs</li>
+                            <li class="flex items-center gap-3"><div class="w-1.5 h-1.5 rounded-full bg-[#2B6B5A] shrink-0"></div> Both traditional and contemporary motifs</li>
+                            <li class="flex items-center gap-3"><div class="w-1.5 h-1.5 rounded-full bg-[#2B6B5A] shrink-0"></div> Highly durable ceramic base</li>
+                        </ul>
+                        <a href="pricing.html" class="btn btn-primary btn-shine inline-block">Order Sample <i class="fas fa-arrow-right ml-2 text-xs"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== BROWSE BY MATERIAL ===== -->
+    <section class="py-28 bg-[#1C1C2E] dark:bg-[#0A0A14]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+            <div class="flex flex-col md:flex-row items-end justify-between gap-6 mb-16 reveal">
+                <div>
+                    <p class="text-[#5AA88E] text-xs font-bold uppercase tracking-[0.3em] mb-3">Materials</p>
+                    <h2 class="text-white leading-tight" style="font-family:'Playfair Display',serif;font-size:clamp(2rem,4vw,3rem);font-weight:700;">Explore By Medium</h2>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 reveal">
+                <div class="group relative h-[300px] rounded-3xl overflow-hidden cursor-pointer">
+                    <img src="assets/tile_italian_marble.png" alt="Natural Stone" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-all"></div>
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <h4 class="text-white text-xl font-bold tracking-wider" style="font-family:'Playfair Display',serif;">Natural Stone</h4>
+                    </div>
+                </div>
+                <div class="group relative h-[300px] rounded-3xl overflow-hidden cursor-pointer">
+                    <img src="assets/tile_moroccan_zellige.png" alt="Glazed Ceramic" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-all"></div>
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <h4 class="text-white text-xl font-bold tracking-wider" style="font-family:'Playfair Display',serif;">Glazed Ceramic</h4>
+                    </div>
+                </div>
+                <div class="group relative h-[300px] rounded-3xl overflow-hidden cursor-pointer">
+                    <img src="assets/tile_portuguese_azulejo.png" alt="Porcelain" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-all"></div>
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <h4 class="text-white text-xl font-bold tracking-wider" style="font-family:'Playfair Display',serif;">Porcelain</h4>
+                    </div>
+                </div>
+                <div class="group relative h-[300px] rounded-3xl overflow-hidden cursor-pointer">
+                    <img src="assets/project_bathroom.png" alt="Terrazzo" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-all"></div>
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <h4 class="text-white text-xl font-bold tracking-wider" style="font-family:'Playfair Display',serif;">Terrazzo</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== INSPIRATION GALLERY ===== -->
+    <section class="py-28 bg-white dark:bg-[#141420]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+            <div class="text-center mb-16 reveal">
+                <p class="text-[#2B6B5A] text-xs font-bold uppercase tracking-[0.3em] mb-3">Project Inspiration</p>
+                <h2 class="leading-tight" style="font-family:'Playfair Display',serif;font-size:clamp(2rem,4vw,3rem);font-weight:700;">Tiles In Context</h2>
+            </div>
+
+            <!-- Masonry Grid Layout -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 reveal">
+                <!-- Kitchen -->
+                <div class="group relative rounded-3xl overflow-hidden shadow-sm h-[400px] lg:col-span-2">
+                    <img src="assets/project_kitchen.png" alt="Kitchen Project" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    <div class="absolute bottom-0 left-0 p-8 translate-y-4 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
+                        <span class="text-[#5AA88E] text-[10px] font-bold uppercase tracking-widest mb-2 block">Portuguese Azulejo</span>
+                        <h4 class="text-white text-2xl font-bold" style="font-family:'Playfair Display',serif;">SoHo Penthouse Kitchen</h4>
+                    </div>
+                </div>
+
+                <!-- Living Room -->
+                <div class="group relative rounded-3xl overflow-hidden shadow-sm h-[400px]">
+                    <img src="assets/project_living.png" alt="Living Room Project" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    <div class="absolute bottom-0 left-0 p-8 translate-y-4 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
+                        <span class="text-[#5AA88E] text-[10px] font-bold uppercase tracking-widest mb-2 block">Italian Marble</span>
+                        <h4 class="text-white text-2xl font-bold" style="font-family:'Playfair Display',serif;">Modern Villa Hearth</h4>
+                    </div>
+                </div>
+
+                <!-- Bathroom -->
+                <div class="group relative rounded-3xl overflow-hidden shadow-sm h-[400px] md:col-span-2 lg:col-span-3">
+                    <img src="assets/project_bathroom.png" alt="Bathroom Project" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" style="object-position: center 30%;">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    <div class="absolute bottom-0 left-0 p-8 translate-y-4 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
+                        <span class="text-[#5AA88E] text-[10px] font-bold uppercase tracking-widest mb-2 block">Moroccan Zellige</span>
+                        <h4 class="text-white text-2xl font-bold" style="font-family:'Playfair Display',serif;">Boutique Hotel Spa</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== COLLECTION FAQ ===== -->
+    <section class="py-28 bg-[#F8F6F2] dark:bg-[#0D0D1A]">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6">
+            <div class="text-center mb-16 reveal">
+                <p class="text-[#2B6B5A] text-xs font-bold uppercase tracking-[0.3em] mb-3">Questions?</p>
+                <h2 class="leading-tight" style="font-family:'Playfair Display',serif;font-size:clamp(2rem,4vw,3rem);font-weight:700;">Ordering & Installation</h2>
+            </div>
+
+            <div class="space-y-4 reveal">
+                <!-- FAQ 1 -->
+                <div class="bg-white dark:bg-[#141420] border border-[#DDD8D0] dark:border-[#2D2D4A] rounded-2xl p-6">
+                    <h4 class="text-lg font-bold mb-3" style="font-family:'Playfair Display',serif;">How many samples can I order?</h4>
+                    <p class="text-sm text-neutral-500 dark:text-neutral-400">Trade professionals can order up to 10 complimentary samples per project. Homeowners and individual clients may request up to 5 complimentary samples. Standard shipping rates apply.</p>
+                </div>
+                <!-- FAQ 2 -->
+                <div class="bg-white dark:bg-[#141420] border border-[#DDD8D0] dark:border-[#2D2D4A] rounded-2xl p-6">
+                    <h4 class="text-lg font-bold mb-3" style="font-family:'Playfair Display',serif;">What is the typical lead time for international orders?</h4>
+                    <p class="text-sm text-neutral-500 dark:text-neutral-400">In-stock collections typically ship within 3-5 business days. For custom orders or direct-from-quarry shipments, lead times generally range from 4 to 8 weeks depending on the region and artisan schedule.</p>
+                </div>
+                <!-- FAQ 3 -->
+                <div class="bg-white dark:bg-[#141420] border border-[#DDD8D0] dark:border-[#2D2D4A] rounded-2xl p-6">
+                    <h4 class="text-lg font-bold mb-3" style="font-family:'Playfair Display',serif;">Are the handmade tiles perfectly uniform?</h4>
+                    <p class="text-sm text-neutral-500 dark:text-neutral-400">No, and that is by design! Collections like our Moroccan Zellige feature intentional variations in color, thickness, and glaze. These "imperfections" are what give the installed tile its characteristic organic beauty and depth.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call To Action -->
+    <section class="py-24 bg-[#2B6B5A]">
+        <div class="max-w-4xl mx-auto px-4 text-center reveal">
+            <h2 class="text-3xl lg:text-5xl font-bold text-white mb-6 leading-tight" style="font-family:'Playfair Display',serif;">Ready to Start Your Next Project?</h2>
+            <p class="text-white/80 mb-10 text-lg">Connect with our design consultants or order a sample kit today.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="pricing.html" class="btn bg-white text-[#2B6B5A] hover:bg-neutral-100 shadow-xl">Order Samples</a>
+                <a href="contact.html" class="btn border border-white/30 text-white hover:bg-white/10">Contact Design Team</a>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-container"></div>
+    <script src="components.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
