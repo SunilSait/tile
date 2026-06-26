@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tessera — Specialty Tile & Mosaic Importer. Explore premium imported tile collections from Italy, Morocco, Portugal and beyond.">
+    <title>Tessera | Specialty Tile & Mosaic Importer</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' fill='none'%3E%3Crect x='4' y='4' width='92' height='92' rx='8' stroke='%232B6B5A' stroke-width='2' stroke-opacity='0.4' fill='none'/%3E%3Crect x='20' y='20' width='25' height='25' rx='3' fill='%232B6B5A' fill-opacity='0.25' stroke='%232B6B5A' stroke-width='1.5'/%3E%3Crect x='55' y='55' width='25' height='25' rx='3' fill='%232B6B5A' fill-opacity='0.25' stroke='%232B6B5A' stroke-width='1.5'/%3E%3C/svg%3E">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script>tailwind.config = { darkMode: 'class', theme: { extend: { colors: { primary: '#2B6B5A', secondary: '#1C1C2E' } } } }</script>
+</head>
+
+<body>
+    <div id="navbar-container"></div>
+
+    <!-- ===== HERO — Full bleed stacked editorial ===== -->
+    <section class="relative min-h-screen flex flex-col justify-end overflow-hidden">
+        <img src="assets/banner_home.png" alt="Tessera luxury tile showroom" class="absolute inset-0 w-full h-full object-cover">
+        <div class="absolute inset-0 bg-gradient-to-t from-[#0D0B12] via-[#0D0B12]/60 to-transparent"></div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 w-full pb-20 pt-40">
+            <div class="max-w-3xl">
+                <p class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-black/40 backdrop-blur-md border border-white/10 text-[#5AA88E] text-xs font-bold uppercase tracking-[0.2em] mb-6 animate-on-scroll slide-up">
+                    <span class="w-1.5 h-1.5 rounded-full bg-[#5AA88E]"></span>
+                    Specialty Tile & Mosaic Importer — Est. 1999
+                </p>
+                <h1 class="text-white leading-[1.05] mb-6 animate-on-scroll slide-up" style="font-family:'Playfair Display',serif;font-size:clamp(3rem,6.5vw,5.5rem);font-weight:700;animation-delay:0.1s;">
+                    Surfaces That<br>Speak Of Heritage
+                </h1>
+                <p class="text-neutral-400 text-lg leading-relaxed max-w-lg mb-10 animate-on-scroll slide-up" style="animation-delay:0.2s;">
+                    Italian marble. Moroccan zellige. Portuguese azulejo. Hand-picked from master artisans across 15+ countries.
+                </p>
+                <div class="flex flex-wrap gap-4 animate-on-scroll slide-up" style="animation-delay:0.3s;">
+                    <a href="services.html" class="btn btn-primary btn-lg btn-shine"><i class="fas fa-th text-xs"></i> Explore Collection</a>
+                    <a href="contact.html" class="btn btn-lg border-2 border-white/30 text-white hover:bg-white/10">Order Samples <i class="fas fa-arrow-right text-xs"></i></a>
+                </div>
+            </div>
+            <!-- Inline stats strip -->
+            <div class="mt-16 pt-8 border-t border-white/15 flex flex-wrap gap-x-16 gap-y-4 animate-on-scroll slide-up" style="animation-delay:0.4s;">
+                <div><span class="text-2xl font-bold text-white" style="font-family:'Playfair Display',serif;" data-counter data-target="1200" data-suffix="+">1200+</span><span class="text-neutral-500 text-xs ml-3 uppercase tracking-wider">Patterns</span></div>
+                <div><span class="text-2xl font-bold text-white" style="font-family:'Playfair Display',serif;" data-counter data-target="15" data-suffix="+">15+</span><span class="text-neutral-500 text-xs ml-3 uppercase tracking-wider">Countries</span></div>
+                <div><span class="text-2xl font-bold text-white" style="font-family:'Playfair Display',serif;" data-counter data-target="25" data-suffix=" Years">25 Years</span><span class="text-neutral-500 text-xs ml-3 uppercase tracking-wider">Experience</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== EDITORIAL COLLECTIONS — Horizontal scrolling cards ===== -->
+    <section class="py-28 bg-[#F8F6F2] dark:bg-[#0D0D1A] overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+            <div class="flex flex-col lg:flex-row items-start lg:items-end justify-between gap-6 mb-14">
+                <div class="reveal">
+                    <p class="text-[#2B6B5A] text-xs font-bold uppercase tracking-[0.3em] mb-3">Curated Origins</p>
+                    <h2 class="leading-tight" style="font-family:'Playfair Display',serif;font-size:clamp(2rem,4vw,3rem);font-weight:700;">World-Class Collections</h2>
+                </div>
+                <a href="services.html" class="btn btn-secondary shrink-0 reveal">View All <i class="fas fa-arrow-right text-xs"></i></a>
+            </div>
+        </div>
+        <!-- Responsive grid instead of horizontal scroll -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-4 sm:px-6 pb-6">
+            <!-- Card 1 -->
+            <div class="group cursor-pointer reveal">
+                <div class="relative h-[400px] xl:h-[480px] rounded-3xl overflow-hidden mb-5">
+                    <img src="assets/tile_italian_marble.png" alt="Italian Marble" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                    <div class="absolute top-5 left-5 bg-white/90 dark:bg-[#1C1C2E]/90 backdrop-blur-sm px-3 py-1.5 rounded-full text-[10px] font-bold uppercase tracking-widest text-[#2B6B5A]">Italy</div>
+                </div>
+                <h3 class="text-lg font-bold mb-1" style="font-family:'Playfair Display',serif;">Italian Marble</h3>
+                <p class="text-sm text-neutral-500 dark:text-neutral-400 leading-relaxed">Calacatta, Carrara & Statuario marble from Tuscany's finest quarries.</p>
+            </div>
+            <!-- Card 2 -->
+            <div class="group cursor-pointer reveal" style="animation-delay:0.1s;">
+                <div class="relative h-[400px] xl:h-[480px] rounded-3xl overflow-hidden mb-5">
+                    <img src="assets/tile_moroccan_zellige.png" alt="Moroccan Zellige" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                    <div class="absolute top-5 left-5 bg-white/90 dark:bg-[#1C1C2E]/90 backdrop-blur-sm px-3 py-1.5 rounded-full text-[10px] font-bold uppercase tracking-widest text-[#2B6B5A]">Morocco</div>
+                </div>
+                <h3 class="text-lg font-bold mb-1" style="font-family:'Playfair Display',serif;">Moroccan Zellige</h3>
+                <p class="text-sm text-neutral-500 dark:text-neutral-400 leading-relaxed">Handmade glazed terracotta from Fez, each tile unique in color & glaze.</p>
+            </div>
+            <!-- Card 3 -->
+            <div class="group cursor-pointer reveal" style="animation-delay:0.2s;">
+                <div class="relative h-[400px] xl:h-[480px] rounded-3xl overflow-hidden mb-5">
+                    <img src="assets/tile_portuguese_azulejo.png" alt="Portuguese Azulejo" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                    <div class="absolute top-5 left-5 bg-white/90 dark:bg-[#1C1C2E]/90 backdrop-blur-sm px-3 py-1.5 rounded-full text-[10px] font-bold uppercase tracking-widest text-[#2B6B5A]">Portugal</div>
+                </div>
+                <h3 class="text-lg font-bold mb-1" style="font-family:'Playfair Display',serif;">Portuguese Azulejo</h3>
+                <p class="text-sm text-neutral-500 dark:text-neutral-400 leading-relaxed">Hand-painted ceramic tiles with iconic blue & white geometric motifs.</p>
+            </div>
+            <!-- Card 4 -->
+            <div class="group cursor-pointer reveal" style="animation-delay:0.3s;">
+                <div class="relative h-[400px] xl:h-[480px] rounded-3xl overflow-hidden mb-5">
+                    <img src="assets/project_bathroom.png" alt="Spanish Terrazzo" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                    <div class="absolute top-5 left-5 bg-white/90 dark:bg-[#1C1C2E]/90 backdrop-blur-sm px-3 py-1.5 rounded-full text-[10px] font-bold uppercase tracking-widest text-[#2B6B5A]">Spain</div>
+                </div>
+                <h3 class="text-lg font-bold mb-1" style="font-family:'Playfair Display',serif;">Spanish Terrazzo</h3>
+                <p class="text-sm text-neutral-500 dark:text-neutral-400 leading-relaxed">Hydraulic & terrazzo tiles with vibrant Mediterranean color palettes.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SPLIT EDITORIAL — Left image, right content (Why us) ===== -->
+    <section class="py-0 bg-white dark:bg-[#141420]">
+        <div class="grid grid-cols-1 lg:grid-cols-2 min-h-[600px]">
+            <!-- Left: Full-bleed image -->
+            <div class="relative overflow-hidden min-h-[400px] lg:min-h-0 reveal">
+                <img src="assets/project_kitchen.png" alt="Tessera kitchen project" class="absolute inset-0 w-full h-full object-cover">
+            </div>
+            <!-- Right: Content -->
+            <div class="flex items-center px-8 sm:px-16 py-20 reveal">
+                <div class="max-w-xl">
+                    <p class="text-[#2B6B5A] text-xs font-bold uppercase tracking-[0.3em] mb-4">Why Tessera</p>
+                    <h2 class="mb-6 leading-tight" style="font-family:'Playfair Display',serif;font-size:clamp(1.8rem,3.5vw,2.8rem);font-weight:700;">
+                        Direct From Artisan Workshops To Your Door
+                    </h2>
+                    <p class="text-neutral-500 dark:text-neutral-400 leading-relaxed mb-10">
+                        We bypass middlemen and work directly with quarries and workshops across 15+ countries. This means authentic provenance, competitive pricing, and tiles that carry the soul of the craftsman.
+                    </p>
+                    <!-- Stacked feature list — different from icon grids -->
+                    <div class="space-y-6 mb-10">
+                        <div class="flex items-start gap-5">
+                            <div class="w-px h-12 bg-[#2B6B5A] shrink-0 mt-1"></div>
+                            <div>
+                                <h4 class="text-sm font-bold text-[#1C1C2E] dark:text-white mb-1">Verified Provenance</h4>
+                                <p class="text-sm text-neutral-500 dark:text-neutral-400">Every tile comes with certification of origin and artisan documentation.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-5">
+                            <div class="w-px h-12 bg-[#2B6B5A] shrink-0 mt-1"></div>
+                            <div>
+                                <h4 class="text-sm font-bold text-[#1C1C2E] dark:text-white mb-1">Free Sample Kit</h4>
+                                <p class="text-sm text-neutral-500 dark:text-neutral-400">Up to 5 free samples per collection. Touch & feel before you commit.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-5">
+                            <div class="w-px h-12 bg-[#2B6B5A] shrink-0 mt-1"></div>
+                            <div>
+                                <h4 class="text-sm font-bold text-[#1C1C2E] dark:text-white mb-1">Design Consultation</h4>
+                                <p class="text-sm text-neutral-500 dark:text-neutral-400">In-house designers help you select, layout, and visualize your tiles.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="about.html" class="btn btn-primary">Learn Our Story</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== MASONRY INSPIRATION GALLERY ===== -->
+    <section class="py-28 bg-[#F8F6F2] dark:bg-[#0D0D1A]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+            <div class="flex flex-col md:flex-row items-start md:items-end justify-between gap-6 mb-14 reveal">
+                <div>
+                    <p class="text-[#2B6B5A] text-xs font-bold uppercase tracking-[0.3em] mb-3">Inspiration</p>
+                    <h2 class="leading-tight" style="font-family:'Playfair Display',serif;font-size:clamp(2rem,4vw,3rem);font-weight:700;">Project Gallery</h2>
+                </div>
+                <a href="contact.html" class="btn btn-secondary shrink-0">Start Your Project</a>
+            </div>
+
+            <!-- CSS columns masonry -->
+            <div class="columns-1 sm:columns-2 lg:columns-3 gap-5 space-y-5 reveal">
+                <div class="tile-card break-inside-avoid cursor-pointer" style="aspect-ratio:1/1;">
+                    <img src="assets/project_kitchen.png" alt="Kitchen"><div class="tile-card-overlay"><h4 class="text-white text-lg font-bold" style="font-family:'Playfair Display',serif;">Marble Herringbone Kitchen</h4><p class="text-white/70 text-xs mt-1">Italian Calacatta</p></div>
+                </div>
+                <div class="tile-card break-inside-avoid cursor-pointer" style="aspect-ratio:4/5;">
+                    <img src="assets/tile_moroccan_zellige.png" alt="Zellige"><div class="tile-card-overlay"><h4 class="text-white text-lg font-bold" style="font-family:'Playfair Display',serif;">Emerald Zellige Feature Wall</h4><p class="text-white/70 text-xs mt-1">Moroccan</p></div>
+                </div>
+                <div class="tile-card break-inside-avoid cursor-pointer" style="aspect-ratio:4/5;">
+                    <img src="assets/project_bathroom.png" alt="Bathroom"><div class="tile-card-overlay"><h4 class="text-white text-lg font-bold" style="font-family:'Playfair Display',serif;">Terrazzo Spa Retreat</h4><p class="text-white/70 text-xs mt-1">Terrazzo</p></div>
+                </div>
+                <div class="tile-card break-inside-avoid cursor-pointer" style="aspect-ratio:1/1;">
+                    <img src="assets/tile_portuguese_azulejo.png" alt="Azulejo"><div class="tile-card-overlay"><h4 class="text-white text-lg font-bold" style="font-family:'Playfair Display',serif;">Heritage Azulejo Corridor</h4><p class="text-white/70 text-xs mt-1">Portuguese</p></div>
+                </div>
+                <div class="tile-card break-inside-avoid cursor-pointer" style="aspect-ratio:1/1;">
+                    <img src="assets/project_living.png" alt="Living room"><div class="tile-card-overlay"><h4 class="text-white text-lg font-bold" style="font-family:'Playfair Display',serif;">Modern Cement Living Room</h4><p class="text-white/70 text-xs mt-1">Cement Tile</p></div>
+                </div>
+                <div class="tile-card break-inside-avoid cursor-pointer" style="aspect-ratio:4/5;">
+                    <img src="assets/tile_italian_marble.png" alt="Marble"><div class="tile-card-overlay"><h4 class="text-white text-lg font-bold" style="font-family:'Playfair Display',serif;">Calacatta Feature</h4><p class="text-white/70 text-xs mt-1">Italian Marble</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== HORIZONTAL JOURNEY — Sticky scroll ===== -->
+    <section class="py-28 bg-[#1C1C2E] dark:bg-[#0A0A14] relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+            <div class="text-center mb-20 reveal">
+                <p class="text-[#5AA88E] text-xs font-bold uppercase tracking-[0.3em] mb-3">The Process</p>
+                <h2 class="text-white leading-tight" style="font-family:'Playfair Display',serif;font-size:clamp(2rem,4vw,3rem);font-weight:700;">From Discovery To Installation</h2>
+            </div>
+
+            <!-- Horizontal journey strip -->
+            <div class="flex flex-col lg:flex-row gap-0 reveal">
+                <div class="flex-1 relative border-l-2 lg:border-l-0 lg:border-t-2 border-[#2B6B5A]/40 pl-8 lg:pl-0 lg:pt-8 pb-12 lg:pb-0 lg:pr-8">
+                    <div class="absolute -left-2.5 lg:left-0 lg:-top-2.5 top-0 w-5 h-5 rounded-full bg-[#2B6B5A] border-4 border-[#1C1C2E]"></div>
+                    <span class="text-[#5AA88E] text-xs font-bold uppercase tracking-[0.3em] mb-2 block">01</span>
+                    <h4 class="text-white text-lg font-bold mb-2" style="font-family:'Playfair Display',serif;">Browse & Discover</h4>
+                    <p class="text-neutral-400 text-sm leading-relaxed">Explore curated collections by origin, material, pattern or room type.</p>
+                </div>
+                <div class="flex-1 relative border-l-2 lg:border-l-0 lg:border-t-2 border-[#2B6B5A]/40 pl-8 lg:pl-0 lg:pt-8 pb-12 lg:pb-0 lg:pr-8">
+                    <div class="absolute -left-2.5 lg:left-0 lg:-top-2.5 top-0 w-5 h-5 rounded-full bg-[#2B6B5A] border-4 border-[#1C1C2E]"></div>
+                    <span class="text-[#5AA88E] text-xs font-bold uppercase tracking-[0.3em] mb-2 block">02</span>
+                    <h4 class="text-white text-lg font-bold mb-2" style="font-family:'Playfair Display',serif;">Select & Sample</h4>
+                    <p class="text-neutral-400 text-sm leading-relaxed">Choose your favorites and request free samples delivered to your door.</p>
+                </div>
+                <div class="flex-1 relative border-l-2 lg:border-l-0 lg:border-t-2 border-[#2B6B5A]/40 pl-8 lg:pl-0 lg:pt-8 pb-12 lg:pb-0 lg:pr-8">
+                    <div class="absolute -left-2.5 lg:left-0 lg:-top-2.5 top-0 w-5 h-5 rounded-full bg-[#2B6B5A] border-4 border-[#1C1C2E]"></div>
+                    <span class="text-[#5AA88E] text-xs font-bold uppercase tracking-[0.3em] mb-2 block">03</span>
+                    <h4 class="text-white text-lg font-bold mb-2" style="font-family:'Playfair Display',serif;">Design & Plan</h4>
+                    <p class="text-neutral-400 text-sm leading-relaxed">Work with our team to plan layouts, patterns and quantities.</p>
+                </div>
+                <div class="flex-1 relative border-l-2 lg:border-l-0 lg:border-t-2 border-[#2B6B5A]/40 pl-8 lg:pl-0 lg:pt-8 pb-0 lg:pr-0">
+                    <div class="absolute -left-2.5 lg:left-0 lg:-top-2.5 top-0 w-5 h-5 rounded-full bg-[#2B6B5A] border-4 border-[#1C1C2E]"></div>
+                    <span class="text-[#5AA88E] text-xs font-bold uppercase tracking-[0.3em] mb-2 block">04</span>
+                    <h4 class="text-white text-lg font-bold mb-2" style="font-family:'Playfair Display',serif;">Deliver & Install</h4>
+                    <p class="text-neutral-400 text-sm leading-relaxed">White-glove shipping with installation support available on request.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== TESTIMONIALS — Large quote slider style ===== -->
+    <section class="py-28 bg-white dark:bg-[#141420]">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 text-center">
+            <p class="text-[#2B6B5A] text-xs font-bold uppercase tracking-[0.3em] mb-3 reveal">Client Stories</p>
+            <h2 class="mb-16 leading-tight reveal" style="font-family:'Playfair Display',serif;font-size:clamp(2rem,4vw,3rem);font-weight:700;">Trusted By Designers & Architects</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-left reveal">
+                <!-- Quote 1 -->
+                <div class="bg-[#F8F6F2] dark:bg-[#1C1C2E] p-8 rounded-3xl relative flex flex-col hover:-translate-y-2 transition-transform duration-300">
+                    <svg class="absolute top-8 right-8 w-10 h-10 text-[#2B6B5A]/10" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+                    <p class="text-neutral-600 dark:text-neutral-300 italic mb-10 relative z-10 leading-relaxed text-base" style="font-family:'Playfair Display',serif;">
+                        "The Moroccan zellige tiles transformed our restaurant into a Marrakech-inspired oasis. The quality is simply unmatched — every single tile has its own character."
+                    </p>
+                    <div class="flex items-center gap-4 mt-auto">
+                        <div class="w-12 h-12 rounded-full overflow-hidden shadow-sm border border-neutral-200 dark:border-neutral-700 bg-white dark:bg-[#0D0D1A]">
+                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sofia Martinez" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <div class="text-sm font-bold text-[#1C1C2E] dark:text-white">Sofia Martinez</div>
+                            <div class="text-xs text-[#5AA88E] uppercase tracking-wider mt-0.5">Interior Designer</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quote 2 -->
+                <div class="bg-[#F8F6F2] dark:bg-[#1C1C2E] p-8 rounded-3xl relative flex flex-col hover:-translate-y-2 transition-transform duration-300">
+                    <svg class="absolute top-8 right-8 w-10 h-10 text-[#2B6B5A]/10" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+                    <p class="text-neutral-600 dark:text-neutral-300 italic mb-10 relative z-10 leading-relaxed text-base" style="font-family:'Playfair Display',serif;">
+                        "Working with Tessera on our boutique hotel was seamless. Their sample program and design consultation saved us weeks of sourcing time."
+                    </p>
+                    <div class="flex items-center gap-4 mt-auto">
+                        <div class="w-12 h-12 rounded-full overflow-hidden shadow-sm border border-neutral-200 dark:border-neutral-700 bg-white dark:bg-[#0D0D1A]">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="James Kowalski" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <div class="text-sm font-bold text-[#1C1C2E] dark:text-white">James Kowalski</div>
+                            <div class="text-xs text-[#5AA88E] uppercase tracking-wider mt-0.5">Architect</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quote 3 -->
+                <div class="bg-[#F8F6F2] dark:bg-[#1C1C2E] p-8 rounded-3xl relative flex flex-col hover:-translate-y-2 transition-transform duration-300">
+                    <svg class="absolute top-8 right-8 w-10 h-10 text-[#2B6B5A]/10" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+                    <p class="text-neutral-600 dark:text-neutral-300 italic mb-10 relative z-10 leading-relaxed text-base" style="font-family:'Playfair Display',serif;">
+                        "We used Tessera's Italian marble for our flagship store in Milan. The veining is spectacular and the customer service was flawless from start to finish."
+                    </p>
+                    <div class="flex items-center gap-4 mt-auto">
+                        <div class="w-12 h-12 rounded-full overflow-hidden shadow-sm border border-neutral-200 dark:border-neutral-700 bg-white dark:bg-[#0D0D1A]">
+                            <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Emma Rossi" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <div class="text-sm font-bold text-[#1C1C2E] dark:text-white">Emma Rossi</div>
+                            <div class="text-xs text-[#5AA88E] uppercase tracking-wider mt-0.5">Commercial Developer</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CTA — Minimal text-centric ===== -->
+    <section class="py-24 bg-[#2B6B5A]">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center">
+            <h2 class="text-white mb-6" style="font-family:'Playfair Display',serif;font-size:clamp(2rem,4vw,3rem);font-weight:700;">Ready To Transform Your Space?</h2>
+            <p class="text-white/70 text-lg mb-10 max-w-xl mx-auto">Request free samples or book a design consultation with our expert team.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="contact.html" class="btn btn-lg bg-white text-[#1E4D40] hover:bg-neutral-100 font-bold"><i class="fas fa-paper-plane text-xs"></i> Request Samples</a>
+                <a href="contact.html" class="btn btn-lg border-2 border-white/40 text-white hover:bg-white/10 font-bold">Book Consultation</a>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-container"></div>
+    <script src="components.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

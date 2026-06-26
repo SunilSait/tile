@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tessera Premium — Discover luxury tile collections with interactive room visualizer, curated by origin and artisan craftsmanship.">
+    <title>Tessera | Premium Collections — Artisan Tile Importer</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' fill='none'%3E%3Crect x='4' y='4' width='92' height='92' rx='8' stroke='%232B6B5A' stroke-width='2' stroke-opacity='0.4' fill='none'/%3E%3Crect x='20' y='20' width='25' height='25' rx='3' fill='%232B6B5A' fill-opacity='0.25' stroke='%232B6B5A' stroke-width='1.5'/%3E%3Crect x='55' y='55' width='25' height='25' rx='3' fill='%232B6B5A' fill-opacity='0.25' stroke='%232B6B5A' stroke-width='1.5'/%3E%3C/svg%3E">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script>tailwind.config = { darkMode: 'class', theme: { extend: { colors: { primary: '#2B6B5A', secondary: '#1C1C2E' } } } }</script>
+</head>
+<body>
+    <div id="navbar-container"></div>
+
+    <!-- ===== HERO — Overlapping image + text block ===== -->
+    <section class="relative pt-10 pb-20 lg:pt-16 lg:pb-28 bg-white dark:bg-[#0D0D1A] overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 items-center gap-12">
+                <!-- Left text block -->
+                <div class="lg:col-span-5 z-10 animate-on-scroll slide-up">
+                    <p class="text-[#2B6B5A] text-xs font-bold uppercase tracking-[0.35em] mb-4">Premium Edition</p>
+                    <h1 class="leading-[1.05] mb-6" style="font-family:'Playfair Display',serif;font-size:clamp(2.4rem,4.5vw,4rem);font-weight:700;">
+                        Ancient Craft,<br>Modern Spaces
+                    </h1>
+                    <p class="text-neutral-500 dark:text-neutral-400 text-base leading-relaxed mb-8 max-w-md">
+                        Handpicked from master artisans across the Mediterranean, Asia and beyond. Every tile carries a story of centuries-old tradition.
+                    </p>
+                    <div class="flex flex-wrap gap-4 mb-10">
+                        <a href="services.html" class="btn btn-primary btn-lg btn-shine"><i class="fas fa-gem text-xs"></i> Premium Catalog</a>
+                        <a href="contact.html" class="btn btn-secondary btn-lg">Free Consultation</a>
+                    </div>
+                    <!-- Inline trust strip -->
+                    <div class="flex flex-wrap gap-6">
+                        <span class="text-[10px] font-bold uppercase tracking-widest text-neutral-400 flex items-center gap-2">
+                            <span class="w-2 h-2 rounded-full bg-[#2B6B5A]"></span> Authenticated Origins
+                        </span>
+                        <span class="text-[10px] font-bold uppercase tracking-widest text-neutral-400 flex items-center gap-2">
+                            <span class="w-2 h-2 rounded-full bg-[#2B6B5A]"></span> Worldwide Shipping
+                        </span>
+                    </div>
+                </div>
+                <!-- Right image -->
+                <div class="lg:col-span-7 animate-on-scroll zoom-in relative" style="animation-delay:0.15s;">
+                    <div class="rounded-3xl overflow-hidden shadow-2xl relative w-full lg:w-[110%] lg:-mr-[10%]">
+                        <img src="assets/banner_home2.png" alt="Premium tile collection" class="w-full h-[400px] lg:h-[650px] object-cover">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ORIGIN STRIP — Full-width mosaic ===== -->
+    <section class="bg-[#F8F6F2] dark:bg-[#0D0D1A] py-0">
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-0">
+            <div class="group relative h-72 overflow-hidden cursor-pointer">
+                <img src="assets/tile_italian_marble.png" alt="Italy" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                <div class="absolute inset-0 bg-black/50 group-hover:bg-black/30 transition-all flex items-center justify-center flex-col">
+                    <h3 class="text-white text-2xl font-bold" style="font-family:'Playfair Display',serif;">Italy</h3>
+                    <p class="text-white/60 text-xs mt-1 uppercase tracking-widest">12 Collections</p>
+                </div>
+            </div>
+            <div class="group relative h-72 overflow-hidden cursor-pointer">
+                <img src="assets/tile_moroccan_zellige.png" alt="Morocco" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                <div class="absolute inset-0 bg-black/50 group-hover:bg-black/30 transition-all flex items-center justify-center flex-col">
+                    <h3 class="text-white text-2xl font-bold" style="font-family:'Playfair Display',serif;">Morocco</h3>
+                    <p class="text-white/60 text-xs mt-1 uppercase tracking-widest">8 Collections</p>
+                </div>
+            </div>
+            <div class="group relative h-72 overflow-hidden cursor-pointer">
+                <img src="assets/tile_portuguese_azulejo.png" alt="Portugal" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                <div class="absolute inset-0 bg-black/50 group-hover:bg-black/30 transition-all flex items-center justify-center flex-col">
+                    <h3 class="text-white text-2xl font-bold" style="font-family:'Playfair Display',serif;">Portugal</h3>
+                    <p class="text-white/60 text-xs mt-1 uppercase tracking-widest">6 Collections</p>
+                </div>
+            </div>
+            <div class="group relative h-72 overflow-hidden cursor-pointer">
+                <img src="assets/project_bathroom.png" alt="Spain" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                <div class="absolute inset-0 bg-black/50 group-hover:bg-black/30 transition-all flex items-center justify-center flex-col">
+                    <h3 class="text-white text-2xl font-bold" style="font-family:'Playfair Display',serif;">Spain</h3>
+                    <p class="text-white/60 text-xs mt-1 uppercase tracking-widest">5 Collections</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== TILE VISUALIZER — Tabbed + preview ===== -->
+    <section class="py-28 bg-white dark:bg-[#141420]" id="visualizer-section">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+            <div class="text-center mb-16 reveal">
+                <p class="text-[#2B6B5A] text-xs font-bold uppercase tracking-[0.3em] mb-3">Live Preview</p>
+                <h2 class="leading-tight" style="font-family:'Playfair Display',serif;font-size:clamp(2rem,4vw,3rem);font-weight:700;">Interactive Tile Visualizer</h2>
+                <p class="text-neutral-500 dark:text-neutral-400 mt-4 max-w-xl mx-auto">Experiment with tile styles and grout colors to preview your design before ordering.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center reveal">
+                <div class="lg:col-span-7 flex justify-center">
+                    <div class="relative w-full max-w-lg aspect-[4/3] rounded-3xl shadow-2xl border border-[#DDD8D0] dark:border-[#2D2D4A] overflow-hidden transition-all duration-500" id="visualizer-card" style="background:#F5F0E8;">
+                        <div class="absolute inset-0 grid grid-cols-6 grid-rows-5 gap-[3px] p-4" id="visualizer-grid"></div>
+                        <div class="absolute bottom-0 left-0 right-0 h-1/3 bg-gradient-to-t from-black/30 to-transparent flex items-end p-6">
+                            <div>
+                                <p class="text-white text-sm font-bold" id="visualizer-tile-name">Calacatta Gold Marble</p>
+                                <p class="text-white/60 text-xs" id="visualizer-grout-name">White Grout · Grid Pattern</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:col-span-5 flex flex-col gap-8">
+                    <div>
+                        <h3 class="text-xs font-bold uppercase tracking-[0.2em] text-[#1C1C2E] dark:text-white mb-4">1. Select Material</h3>
+                        <div class="grid grid-cols-2 gap-3" id="tile-style-btns">
+                            <button class="viz-btn active group relative h-24 rounded-xl overflow-hidden border-2 border-[#2B6B5A] text-left" data-tile="marble" data-color="#E8DDD0" data-name="Calacatta Gold Marble">
+                                <img src="assets/tile_italian_marble.png" alt="Marble" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                                <div class="absolute inset-0 bg-black/40 group-[.active]:bg-black/20 transition-all"></div>
+                                <div class="absolute bottom-3 left-3"><span class="block text-white font-bold text-sm" style="font-family:'Playfair Display',serif;">Marble</span></div>
+                                <div class="absolute top-3 right-3 w-5 h-5 rounded-full border-2 border-white flex items-center justify-center opacity-0 group-[.active]:opacity-100 bg-[#2B6B5A] transition-opacity"><i class="fas fa-check text-white text-[10px]"></i></div>
+                            </button>
+                            <button class="viz-btn group relative h-24 rounded-xl overflow-hidden border-2 border-transparent hover:border-neutral-300 dark:hover:border-neutral-700 text-left" data-tile="zellige" data-color="#2B6B5A" data-name="Emerald Zellige">
+                                <img src="assets/tile_moroccan_zellige.png" alt="Zellige" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                                <div class="absolute inset-0 bg-black/40 group-[.active]:bg-black/20 transition-all"></div>
+                                <div class="absolute bottom-3 left-3"><span class="block text-white font-bold text-sm" style="font-family:'Playfair Display',serif;">Zellige</span></div>
+                                <div class="absolute top-3 right-3 w-5 h-5 rounded-full border-2 border-white flex items-center justify-center opacity-0 group-[.active]:opacity-100 bg-[#2B6B5A] transition-opacity"><i class="fas fa-check text-white text-[10px]"></i></div>
+                            </button>
+                            <button class="viz-btn group relative h-24 rounded-xl overflow-hidden border-2 border-transparent hover:border-neutral-300 dark:hover:border-neutral-700 text-left" data-tile="terrazzo" data-color="#D4C8B8" data-name="Classic Terrazzo">
+                                <img src="assets/project_bathroom.png" alt="Terrazzo" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                                <div class="absolute inset-0 bg-black/40 group-[.active]:bg-black/20 transition-all"></div>
+                                <div class="absolute bottom-3 left-3"><span class="block text-white font-bold text-sm" style="font-family:'Playfair Display',serif;">Terrazzo</span></div>
+                                <div class="absolute top-3 right-3 w-5 h-5 rounded-full border-2 border-white flex items-center justify-center opacity-0 group-[.active]:opacity-100 bg-[#2B6B5A] transition-opacity"><i class="fas fa-check text-white text-[10px]"></i></div>
+                            </button>
+                            <button class="viz-btn group relative h-24 rounded-xl overflow-hidden border-2 border-transparent hover:border-neutral-300 dark:hover:border-neutral-700 text-left" data-tile="azulejo" data-color="#1C3D5A" data-name="Portuguese Azulejo">
+                                <img src="assets/tile_portuguese_azulejo.png" alt="Azulejo" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                                <div class="absolute inset-0 bg-black/40 group-[.active]:bg-black/20 transition-all"></div>
+                                <div class="absolute bottom-3 left-3"><span class="block text-white font-bold text-sm" style="font-family:'Playfair Display',serif;">Azulejo</span></div>
+                                <div class="absolute top-3 right-3 w-5 h-5 rounded-full border-2 border-white flex items-center justify-center opacity-0 group-[.active]:opacity-100 bg-[#2B6B5A] transition-opacity"><i class="fas fa-check text-white text-[10px]"></i></div>
+                            </button>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-xs font-bold uppercase tracking-[0.2em] text-[#1C1C2E] dark:text-white mb-4">2. Select Grout Color</h3>
+                        <div class="grid grid-cols-4 gap-3" id="grout-btns">
+                            <button class="viz-grout-btn active group relative aspect-square rounded-xl overflow-hidden border-2 border-[#2B6B5A]" data-grout="#FFFFFF" data-grout-name="White Grout">
+                                <div class="absolute inset-0 bg-[#F8F6F2] dark:bg-[#141420]"></div>
+                                <div class="absolute inset-0 flex flex-col items-center justify-center">
+                                    <div class="w-6 h-6 rounded-full border border-neutral-300 shadow-sm flex items-center justify-center bg-white mb-1">
+                                        <i class="fas fa-check text-[#2B6B5A] text-[10px] opacity-0 group-[.active]:opacity-100 transition-opacity"></i>
+                                    </div>
+                                    <span class="text-[9px] font-bold text-neutral-600 dark:text-neutral-400 group-[.active]:text-[#2B6B5A] uppercase tracking-wider">White</span>
+                                </div>
+                            </button>
+                            <button class="viz-grout-btn group relative aspect-square rounded-xl overflow-hidden border-2 border-transparent hover:border-neutral-300 dark:hover:border-neutral-700" data-grout="#C8C0B4" data-grout-name="Sand Grout">
+                                <div class="absolute inset-0 bg-[#F8F6F2] dark:bg-[#141420]"></div>
+                                <div class="absolute inset-0 flex flex-col items-center justify-center">
+                                    <div class="w-6 h-6 rounded-full border border-neutral-300 shadow-sm flex items-center justify-center bg-[#C8C0B4] mb-1">
+                                        <i class="fas fa-check text-white text-[10px] opacity-0 group-[.active]:opacity-100 transition-opacity"></i>
+                                    </div>
+                                    <span class="text-[9px] font-bold text-neutral-600 dark:text-neutral-400 group-[.active]:text-[#2B6B5A] uppercase tracking-wider">Sand</span>
+                                </div>
+                            </button>
+                            <button class="viz-grout-btn group relative aspect-square rounded-xl overflow-hidden border-2 border-transparent hover:border-neutral-300 dark:hover:border-neutral-700" data-grout="#4A4A4A" data-grout-name="Charcoal Grout">
+                                <div class="absolute inset-0 bg-[#F8F6F2] dark:bg-[#141420]"></div>
+                                <div class="absolute inset-0 flex flex-col items-center justify-center">
+                                    <div class="w-6 h-6 rounded-full border border-neutral-300 shadow-sm flex items-center justify-center bg-[#4A4A4A] mb-1">
+                                        <i class="fas fa-check text-white text-[10px] opacity-0 group-[.active]:opacity-100 transition-opacity"></i>
+                                    </div>
+                                    <span class="text-[9px] font-bold text-neutral-600 dark:text-neutral-400 group-[.active]:text-[#2B6B5A] uppercase tracking-wider">Charcoal</span>
+                                </div>
+                            </button>
+                            <button class="viz-grout-btn group relative aspect-square rounded-xl overflow-hidden border-2 border-transparent hover:border-neutral-300 dark:hover:border-neutral-700" data-grout="#1C1C1C" data-grout-name="Black Grout">
+                                <div class="absolute inset-0 bg-[#F8F6F2] dark:bg-[#141420]"></div>
+                                <div class="absolute inset-0 flex flex-col items-center justify-center">
+                                    <div class="w-6 h-6 rounded-full border border-neutral-300 shadow-sm flex items-center justify-center bg-[#1C1C1C] mb-1">
+                                        <i class="fas fa-check text-white text-[10px] opacity-0 group-[.active]:opacity-100 transition-opacity"></i>
+                                    </div>
+                                    <span class="text-[9px] font-bold text-neutral-600 dark:text-neutral-400 group-[.active]:text-[#2B6B5A] uppercase tracking-wider">Black</span>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="contact.html" class="btn btn-primary btn-shine"><i class="fas fa-paper-plane text-xs"></i> Request This Sample</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FULL-WIDTH NUMBER STRIP ===== -->
+    <section class="py-0 bg-[#1C1C2E] dark:bg-[#0A0A14]">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-0 divide-x divide-white/10">
+            <div class="py-12 text-center reveal">
+                <div class="text-3xl font-bold text-white" style="font-family:'Playfair Display',serif;" data-counter data-target="1200" data-suffix="+">1200+</div>
+                <div class="text-xs text-neutral-500 uppercase tracking-wider mt-2">Patterns</div>
+            </div>
+            <div class="py-12 text-center reveal">
+                <div class="text-3xl font-bold text-white" style="font-family:'Playfair Display',serif;" data-counter data-target="15" data-suffix="+">15+</div>
+                <div class="text-xs text-neutral-500 uppercase tracking-wider mt-2">Countries</div>
+            </div>
+            <div class="py-12 text-center reveal">
+                <div class="text-3xl font-bold text-white" style="font-family:'Playfair Display',serif;" data-counter data-target="3500" data-suffix="+">3500+</div>
+                <div class="text-xs text-neutral-500 uppercase tracking-wider mt-2">Projects</div>
+            </div>
+            <div class="py-12 text-center reveal">
+                <div class="text-3xl font-bold text-white" style="font-family:'Playfair Display',serif;" data-counter data-target="25" data-suffix=" Yrs">25 Yrs</div>
+                <div class="text-xs text-neutral-500 uppercase tracking-wider mt-2">Experience</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SIGNATURE COLLECTIONS — Large alternating editorial ===== -->
+    <section class="py-28 bg-[#F8F6F2] dark:bg-[#0D0D1A]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+            <div class="text-center mb-20 reveal">
+                <p class="text-[#2B6B5A] text-xs font-bold uppercase tracking-[0.3em] mb-3">Signature</p>
+                <h2 class="leading-tight" style="font-family:'Playfair Display',serif;font-size:clamp(2rem,4vw,3rem);font-weight:700;">Premium Collections</h2>
+            </div>
+
+            <!-- Alternating rows -->
+            <div class="space-y-20">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-0 rounded-3xl overflow-hidden border border-[#DDD8D0] dark:border-[#2D2D4A] reveal">
+                    <div class="relative h-80 lg:h-auto overflow-hidden">
+                        <img src="assets/project_kitchen.png" alt="Calacatta Collection" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-10 lg:p-16 flex flex-col justify-center bg-white dark:bg-[#141420]">
+                        <span class="text-[#2B6B5A] text-[10px] font-bold uppercase tracking-[0.25em] mb-4 block">Best Seller</span>
+                        <h3 class="text-2xl font-bold mb-4" style="font-family:'Playfair Display',serif;">Calacatta Collection</h3>
+                        <p class="text-neutral-500 dark:text-neutral-400 text-sm leading-relaxed mb-8">Premium Italian marble in polished, honed and brushed finishes. Perfect for kitchens, bathrooms and feature walls.</p>
+                        <a href="services.html" class="text-[#2B6B5A] text-xs font-bold uppercase tracking-widest flex items-center gap-2 hover:gap-3 transition-all w-fit">Explore <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-0 rounded-3xl overflow-hidden border border-[#DDD8D0] dark:border-[#2D2D4A] reveal">
+                    <div class="p-10 lg:p-16 flex flex-col justify-center bg-white dark:bg-[#141420] order-2 lg:order-1">
+                        <span class="text-[#2B6B5A] text-[10px] font-bold uppercase tracking-[0.25em] mb-4 block">New Arrival</span>
+                        <h3 class="text-2xl font-bold mb-4" style="font-family:'Playfair Display',serif;">Fez Artisan Collection</h3>
+                        <p class="text-neutral-500 dark:text-neutral-400 text-sm leading-relaxed mb-8">Handmade Moroccan zellige in 20+ glaze colors. Each tile is hand-cut and uniquely imperfect — true artisan beauty.</p>
+                        <a href="services.html" class="text-[#2B6B5A] text-xs font-bold uppercase tracking-widest flex items-center gap-2 hover:gap-3 transition-all w-fit">Explore <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="relative h-80 lg:h-auto overflow-hidden order-1 lg:order-2">
+                        <img src="assets/project_bathroom.png" alt="Fez Collection" class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CRAFTSMANSHIP — Video overlay ===== -->
+    <section class="py-0">
+        <div class="relative h-[500px] overflow-hidden">
+            <img src="assets/banner_about.png" alt="Artisan craftsmanship" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex items-end justify-center pb-16">
+                <div class="text-center max-w-2xl px-6">
+                    <div class="w-20 h-20 rounded-full bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center mx-auto mb-6 cursor-pointer hover:bg-white/20 transition-all hover:scale-110">
+                        <i class="fas fa-play text-white text-2xl ml-1"></i>
+                    </div>
+                    <h2 class="text-white mb-3" style="font-family:'Playfair Display',serif;font-size:clamp(1.8rem,3.5vw,2.6rem);font-weight:700;">The Art Behind Every Tile</h2>
+                    <p class="text-white/80 text-sm">From ancient workshops to your walls — witness centuries of tradition brought to life.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CTA ===== -->
+    <section class="py-24 bg-[#2B6B5A]">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center">
+            <h2 class="text-white mb-6" style="font-family:'Playfair Display',serif;font-size:clamp(2rem,4vw,3rem);font-weight:700;">Elevate Your Next Project</h2>
+            <p class="text-white/70 text-lg mb-10 max-w-xl mx-auto">Whether you're an architect, designer, or homeowner — our team is ready to help.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="contact.html" class="btn btn-lg bg-white text-[#1E4D40] hover:bg-neutral-100 font-bold"><i class="fas fa-paper-plane text-xs"></i> Get Free Samples</a>
+                <a href="pricing.html" class="btn btn-lg border-2 border-white/40 text-white hover:bg-white/10 font-bold">View Pricing</a>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-container"></div>
+    <script src="components.js"></script>
+    <script src="script.js"></script>
+    <script>
+        // Tile Visualizer
+        (function() {
+            const card = document.getElementById('visualizer-card');
+            const grid = document.getElementById('visualizer-grid');
+            const tileName = document.getElementById('visualizer-tile-name');
+            const groutName = document.getElementById('visualizer-grout-name');
+            if (!card || !grid) return;
+            let currentTileColor = '#E8DDD0', currentGroutColor = '#FFFFFF', currentTileName = 'Calacatta Gold Marble', currentGroutName = 'White Grout';
+            function renderGrid() {
+                grid.innerHTML = '';
+                for (let i = 0; i < 30; i++) {
+                    const tile = document.createElement('div');
+                    tile.className = 'rounded-sm transition-all duration-300';
+                    tile.style.background = currentTileColor;
+                    tile.style.opacity = (0.85 + (Math.random() * 0.08 - 0.04)).toFixed(2);
+                    tile.style.boxShadow = 'inset 0 0 4px rgba(0,0,0,0.08)';
+                    grid.appendChild(tile);
+                }
+                card.style.background = currentGroutColor;
+                if (tileName) tileName.textContent = currentTileName;
+                if (groutName) groutName.textContent = currentGroutName + ' · Grid Pattern';
+            }
+            renderGrid();
+            document.querySelectorAll('.viz-btn').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    document.querySelectorAll('.viz-btn').forEach(b => { b.classList.remove('active','border-[#2B6B5A]'); b.classList.add('border-transparent'); });
+                    btn.classList.remove('border-transparent');
+                    btn.classList.add('active','border-[#2B6B5A]');
+                    currentTileColor = btn.dataset.color; currentTileName = btn.dataset.name; renderGrid();
+                });
+            });
+            document.querySelectorAll('.viz-grout-btn').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    document.querySelectorAll('.viz-grout-btn').forEach(b => { b.classList.remove('active','border-[#2B6B5A]'); b.classList.add('border-transparent'); });
+                    btn.classList.remove('border-transparent');
+                    btn.classList.add('active','border-[#2B6B5A]');
+                    currentGroutColor = btn.dataset.grout; currentGroutName = btn.dataset.groutName; renderGrid();
+                });
+            });
+        })();
+    </script>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="We're crafting something beautiful — Tessera's new experience is coming soon. Stay tuned.">
+    <title>Coming Soon | Tessera Tiles</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' fill='none'%3E%3Crect x='4' y='4' width='92' height='92' rx='8' stroke='%232B6B5A' stroke-width='2' stroke-opacity='0.4' fill='none'/%3E%3Crect x='20' y='20' width='25' height='25' rx='3' fill='%232B6B5A' fill-opacity='0.25' stroke='%232B6B5A' stroke-width='1.5'/%3E%3Crect x='55' y='55' width='25' height='25' rx='3' fill='%232B6B5A' fill-opacity='0.25' stroke='%232B6B5A' stroke-width='1.5'/%3E%3C/svg%3E">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script>tailwind.config={darkMode:'class',theme:{extend:{colors:{primary:'#2B6B5A',secondary:'#1C1C2E'}}}}</script>
+</head>
+<body>
+<div class="auth-page" id="coming-soon-page" style="min-height:100vh;">
+    <div class="auth-top-icons">
+        <button class="icon-btn dark-toggle" title="Toggle Dark Mode">
+            <i class="fas fa-moon"></i>
+        </button>
+        <button class="icon-btn rtl-toggle" title="Toggle RTL">
+            <i class="fas fa-exchange-alt"></i>
+        </button>
+    </div>
+
+    <div class="absolute inset-0 pointer-events-none overflow-hidden">
+        <div class="absolute w-[600px] h-[600px] rounded-full" style="background:radial-gradient(circle,rgba(43,107,90,0.12) 0%,transparent 70%);top:-200px;left:-200px;"></div>
+        <div class="absolute w-[500px] h-[500px] rounded-full" style="background:radial-gradient(circle,rgba(43,107,90,0.08) 0%,transparent 70%);bottom:-150px;right:-150px;"></div>
+        <div class="absolute inset-0" style="background-image:linear-gradient(rgba(43,107,90,0.03) 1px,transparent 1px),linear-gradient(90deg,rgba(43,107,90,0.03) 1px,transparent 1px);background-size:48px 48px;"></div>
+    </div>
+
+    <div class="auth-card animate-on-scroll zoom-in text-center" style="max-width:520px;">
+        <a href="index.html" class="auth-logo">
+            <svg width="32" height="32" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="4" y="4" width="92" height="92" rx="8" stroke="var(--logo-primary)" stroke-width="2" stroke-opacity="0.4" fill="none"/>
+                <rect x="20" y="20" width="25" height="25" rx="3" fill="var(--logo-primary)" fill-opacity="0.25" stroke="var(--logo-primary)" stroke-width="1.5"/>
+                <rect x="55" y="55" width="25" height="25" rx="3" fill="var(--logo-primary)" fill-opacity="0.25" stroke="var(--logo-primary)" stroke-width="1.5"/>
+                <path d="M38 42 L62 42 M50 42 L50 65" stroke="var(--logo-primary)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span style="font-family:'Playfair Display',serif;">Tessera</span>
+        </a>
+
+        <!-- Animated mosaic icon -->
+        <div class="my-6 flex justify-center">
+            <div class="relative">
+                <div class="grid grid-cols-4 gap-1.5" style="animation: pulse 3s ease-in-out infinite;">
+                    <div class="w-8 h-8 rounded-md bg-[#2B6B5A]/30"></div>
+                    <div class="w-8 h-8 rounded-md bg-[#2B6B5A]/50"></div>
+                    <div class="w-8 h-8 rounded-md bg-[#2B6B5A]/30"></div>
+                    <div class="w-8 h-8 rounded-md bg-[#2B6B5A]/50"></div>
+                    <div class="w-8 h-8 rounded-md bg-[#2B6B5A]/50"></div>
+                    <div class="w-8 h-8 rounded-md bg-[#2B6B5A]/70"></div>
+                    <div class="w-8 h-8 rounded-md bg-[#2B6B5A]/50"></div>
+                    <div class="w-8 h-8 rounded-md bg-[#2B6B5A]/70"></div>
+                    <div class="w-8 h-8 rounded-md bg-[#2B6B5A]/30"></div>
+                    <div class="w-8 h-8 rounded-md bg-[#2B6B5A]/50"></div>
+                    <div class="w-8 h-8 rounded-md bg-[#2B6B5A]/30"></div>
+                    <div class="w-8 h-8 rounded-md bg-[#2B6B5A]/50"></div>
+                </div>
+            </div>
+        </div>
+
+        <h1 class="text-3xl font-bold mb-3" style="font-family:'Playfair Display',serif;">
+            We're Crafting Something <span class="emerald-text">Beautiful</span>
+        </h1>
+        <p class="text-sm text-neutral-500 dark:text-neutral-400 mb-8 leading-relaxed max-w-sm mx-auto">
+            Our new tile experience is being carefully assembled, piece by piece. Sign up to be the first to explore our latest collections.
+        </p>
+
+        <!-- Countdown -->
+        <div class="flex items-center justify-center gap-4 mb-10" id="countdown">
+            <div class="text-center">
+                <div class="w-16 h-16 rounded-xl bg-[#2B6B5A]/10 border border-[#2B6B5A]/20 flex items-center justify-center">
+                    <span class="text-2xl font-bold text-[#2B6B5A]" style="font-family:'Playfair Display',serif;" id="cd-days">30</span>
+                </div>
+                <span class="text-[10px] text-neutral-400 uppercase tracking-wider mt-2 block">Days</span>
+            </div>
+            <span class="text-xl text-[#2B6B5A] font-light mt-[-16px]">:</span>
+            <div class="text-center">
+                <div class="w-16 h-16 rounded-xl bg-[#2B6B5A]/10 border border-[#2B6B5A]/20 flex items-center justify-center">
+                    <span class="text-2xl font-bold text-[#2B6B5A]" style="font-family:'Playfair Display',serif;" id="cd-hours">00</span>
+                </div>
+                <span class="text-[10px] text-neutral-400 uppercase tracking-wider mt-2 block">Hours</span>
+            </div>
+            <span class="text-xl text-[#2B6B5A] font-light mt-[-16px]">:</span>
+            <div class="text-center">
+                <div class="w-16 h-16 rounded-xl bg-[#2B6B5A]/10 border border-[#2B6B5A]/20 flex items-center justify-center">
+                    <span class="text-2xl font-bold text-[#2B6B5A]" style="font-family:'Playfair Display',serif;" id="cd-minutes">00</span>
+                </div>
+                <span class="text-[10px] text-neutral-400 uppercase tracking-wider mt-2 block">Minutes</span>
+            </div>
+            <span class="text-xl text-[#2B6B5A] font-light mt-[-16px]">:</span>
+            <div class="text-center">
+                <div class="w-16 h-16 rounded-xl bg-[#2B6B5A]/10 border border-[#2B6B5A]/20 flex items-center justify-center">
+                    <span class="text-2xl font-bold text-[#2B6B5A]" style="font-family:'Playfair Display',serif;" id="cd-seconds">00</span>
+                </div>
+                <span class="text-[10px] text-neutral-400 uppercase tracking-wider mt-2 block">Seconds</span>
+            </div>
+        </div>
+
+        <!-- Newsletter -->
+        <form class="flex flex-col sm:flex-row gap-3 mb-6" onsubmit="event.preventDefault();this.innerHTML='<p class=\'text-sm text-emerald-500 font-bold py-3\'>✦ Thank you! We\'ll notify you when we launch.</p>';">
+            <input type="email" required placeholder="Enter your email"
+                class="flex-1 px-4 py-3 text-sm bg-[#F8F6F2] dark:bg-[#1C1C2E] border border-[#DDD8D0] dark:border-[#2D2D4A] focus:border-[#2B6B5A] focus:ring-2 focus:ring-[#2B6B5A]/20 rounded-xl outline-none transition-all dark:text-white placeholder:text-neutral-400" />
+            <button type="submit" class="btn btn-primary btn-shine shrink-0">
+                Notify Me
+            </button>
+        </form>
+
+        <a href="index.html" class="text-sm text-[#2B6B5A] font-semibold hover:underline">
+            <i class="fas fa-arrow-left text-xs mr-1"></i> Back to Home
+        </a>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
