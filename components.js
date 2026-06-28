@@ -16,9 +16,9 @@
     const NAV_LINKS = [
         { label: 'Home', href: 'index.html' },
         { label: 'Home 2', href: 'home2.html' },
+        { label: 'About', href: 'about.html' },
         { label: 'Collections', href: 'collections.html' },
         { label: 'Services', href: 'services.html' },
-        { label: 'About', href: 'about.html' },
         { label: 'Pricing', href: 'pricing.html' },
         { label: 'Contact', href: 'contact.html' }
     ];
@@ -170,9 +170,9 @@
                         <ul class="space-y-2.5">
                             <li><a href="index.html" class="footer-link">Home</a></li>
                             <li><a href="home2.html" class="footer-link">Home 2 — Premium</a></li>
+                            <li><a href="about.html" class="footer-link">About</a></li>
                             <li><a href="collections.html" class="footer-link">Collections</a></li>
                             <li><a href="services.html" class="footer-link">Services</a></li>
-                            <li><a href="about.html" class="footer-link">About</a></li>
                             <li><a href="pricing.html" class="footer-link">Pricing</a></li>
                         </ul>
                     </div>
